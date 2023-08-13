@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-""" State class """
+"""This module creates a User class"""
 
-import uuid
-from datetime import datetime
-from models import storage
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """ State class """
+    """Class for managing state objects"""
+
     name = ""

@@ -1,51 +1,39 @@
-          AirBnB clone
-description of the project:
+# The AirBnB Clone Project
+![AirBnB Logo](https://www.pngitem.com/pimgs/m/132-1322125_transparent-background-airbnb-logo-hd-png-download.png)
 
-The AirBnB clone project starts now until… the end of the first year. The goal of the project is to deploy on your server a simple copy of the AirBnB website.
+## Project Description
+This is the first part of the AirBnB clone project where we worked on the backend of the project while interfacing it with a console application using the cmd module in Python.
 
-description of the command interpreter:
-The console
-create your data model
-manage (create, update, destroy, etc) objects via a console / command interpreter
+Generated data (Python objects) are stored in a JSON file and can be accessed using the JSON module in Python.
 
-HBNB is a complete web application, integrating database storage, HTML/CSS templating, API, front-end and others.
+## Description of the Command Interpreter:
+The application's interface resembles the Bash shell but supports a limited number of predefined commands designed specifically for the AirBnB website's usage.
 
-This team project is part of the ALX School Software Engineering program. It represents the first step towards building a full web application: the AirBnB clone.
+The command line interpreter serves as the frontend of the web app, enabling users to interact with the backend developed using Python's OOP programming.
 
-This first step consists of:
+Supported commands include:
+- `show`
+- `create`
+- `update`
+- `destroy`
+- `count`
 
-a command-line interface for data management
-and base classes for the storage of this data.
-Usage
-The console works both in interactive mode and non-interactive mode, much like a Unix shell. It prints a prompt (hbnb) and waits for the user for input.
+This implementation of the command line interpreter, combined with the backend and file storage system, supports various actions:
+- Creating new objects (e.g., a new User or a new Place)
+- Retrieving objects from files, databases, etc.
+- Performing operations on objects (counting, computing stats, etc.)
+- Updating object attributes
+- Destroying objects
 
-Command	Example
-Run the console	./console.p
-Quit the console	(hbnb) quit
-Display the help for a command	(hbnb) help
-Create an object (prints its id)	(hbnb) create
-Show all objects, or all instances of a class	(hbnb) all or (hbnb) all
-Update an attribute of an object	(hbnb) update "" or (hbnb) .update(, , ""
-Interactive mode
-./console.py (hbnb) help
+## Additional Feature: Search Command
+We've introduced an additional command, `search`, to the command interpreter. This command lets users search for specific objects based on specified criteria, enhancing the interaction with the data.
 
-Documented commands (type help ):
-EOF help quit
+To use the `search` command, enter the following in the command interpreter:
+search <class_name> <attribute_name> <attribute_value>
 
-(hbnb) (hbnb) (hbnb) quit $
+bash
+Copy code
+This command will return a list of objects that match the search criteria.
 
-Non-interactive mode (example) $ echo "help" | ./console.py (hbnb)
-Documented commands (type help ):
-EOF help quit (hbnb) $ $ cat test_help help $ $ cat test_help | ./console.py (hbnb)
-
-Documented commands (type help ):
-EOF help quit (hbnb) $
-
-Testing
-Unittests for the HolbertonBnB project are defined in the [tests] To run the entire test suite simultaneously, execute the following command:
-
- python3 unittest -m discover tests
-
-Alternatively, you can specify a single test file to run at a time:
-
- python3 unittest -m tests/test_console.py
+## Authors
+Anas KHEIREDDINE & Abderrazaq FERMAQ

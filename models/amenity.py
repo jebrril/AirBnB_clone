@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-""" Amenity class """
+"""This module creates a Amenity class"""
 
-import uuid
-from datetime import datetime
-from models import storage
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """ Amenity class """
+    """Class for managing amenity objects"""
+
     name = ""

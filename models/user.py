@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-""" User class """
-
-import uuid
+"""This module creates a User class"""
 from models.base_model import BaseModel
 
 
 class User(BaseModel):
-    """ User class """
+    """Class for managing user objects"""
+
     email = ""
     password = ""
     first_name = ""
